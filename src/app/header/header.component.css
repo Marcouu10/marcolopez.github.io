@@ -1,0 +1,39 @@
+.header-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Centra la celda de la foto */
+.photo-cell {
+  text-align: center; /* Centrado horizontal */
+  vertical-align: middle; /* Centrado vertical */
+  padding: 10px; /* Ajusta este valor si quieres más o menos espacio */
+}
+
+/* Estilo de la imagen */
+.profile-img {
+  width: 180px;  /* Ajusta el tamaño a tu gusto */
+  height: 180px;
+  border-radius: 50%; /* La hace redonda */
+  object-fit: cover; /* Evita que se deforme */
+  border: 3px solid #f0f0f0; /* Un borde sutil para que no flote en el blanco */
+  display: block; /* Ayuda a quitar espacios fantasma debajo */
+  margin: 0 auto; /* Asegura el centrado */
+}
+
+/* Alineación de las otras celdas */
+.info-cell {
+  text-align: left;
+  width: 40%;
+}
+
+.contact-cell {
+  text-align: right;
+  width: 30%;
+}
+@media (max-width: 480px) {
+    .profile-img {
+        width: 120px;   /* Se hace un poquito más pequeña en pantallas mini */
+        height: 120px;
+    }
+}

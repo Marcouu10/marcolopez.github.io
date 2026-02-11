@@ -1,26 +1,33 @@
-<table border="1">
- <tr>
-   <td colspan="2">
-      <app-header></app-header>
-   </td>
- </tr>
- <tr>
-   <td> <app-work-experience></app-work-experience> </td>
-   <td> <app-skills></app-skills> </td>
- </tr>
- <tr>
-   <td> <app-education></app-education> </td>
-   <td> <app-certificates></app-certificates> </td>
- </tr> 
-  <tr>
-   <td> <app-education></app-education> </td>
-   <td> <app-certificates></app-certificates> </td>
- </tr>
-  <tr>
-   <td> <app-languages></app-languages> </td>
-   <td> <app-interests></app-interests> </td>
-  </tr>
-</table>
-<router-outlet></router-outlet>
- 
+<div class="main-container">
+  <table>
+    <tr>
+      <td colspan="2">
+        <app-header></app-header>
+      </td>
+    </tr>
 
+    <tr>
+      <td style="width: 60%;">
+        <app-work-experience></app-work-experience>
+      </td>
+      <td style="width: 40%;">
+        <app-skills></app-skills>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border-bottom: 2px solid black;">
+        <app-education></app-education>
+      </td>
+      <td style="border-bottom: 2px solid black;">
+        <app-certificates></app-certificates>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <app-languages></app-languages>
+      </td>
+    </tr>
+  </table>
+</div>

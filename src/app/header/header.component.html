@@ -1,18 +1,20 @@
-<tr>
-  <td>
-    {{header.name}} <br>
-    {{header.description}}
-  </td>
-  <td>
-    <img [src]="header['photo url']" width="200" height="200" alt="Foto de perfil">
-  </td>
-  <td>
-      {{header.email}}<br> 
-      {{header.phoneNumber}}<br> 
-      {{header.location}}<br> 
-      
+<table class="header-table">
+  <tr>
+    <td class="info-cell">
+      <h3>{{header.name}}</h3>
+      <p>{{header.description}}</p>
+    </td>
+    
+    <td class="photo-cell">
+      <img [src]="header['photo url']" alt="Foto de perfil" class="profile-img">
+    </td>
+    
+    <td class="contact-cell">
+      {{header.email}}<br>
+      {{header.phoneNumber}}<br>
+      {{header.location}}<br>
       <a [href]="header.GitHub" target="_blank">GitHub</a><br>
       <a [href]="header.Linkedin" target="_blank">LinkedIn</a>
-  </td>
- </tr>
-
+    </td>
+  </tr>
+</table>    

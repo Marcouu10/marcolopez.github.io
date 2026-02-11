@@ -1,0 +1,15 @@
+body {
+  background-color: #e3f2fd; /* Un azul muy claro y profesional */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Si quieres un azul más fuerte pero elegante */
+.main-container {
+  background-color: #f0f7ff; /* Azul "hielo" */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
